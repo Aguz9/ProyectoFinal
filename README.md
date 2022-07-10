@@ -1,2 +1,2 @@
-# Entrega10
-Agregando github
+# Parte 2 del proyecto final
+Agregando github/grid/flexbox/animaciones
