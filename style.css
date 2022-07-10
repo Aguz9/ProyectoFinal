@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+/* Logo + titulo + barra de navegacion */
+header{
+    background-color:#672544 ;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    height: 9rem;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold; 
+    align-items: center;
+    width: 90vw; 
+}
+/* logp */
+.header__content div h3 a{ 
+    color: #fe7363;
+}
+/* barra de navegacion */
+.content__navbar{
+    display: flex;
+    align-items: baseline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content__navbar li{
+    width: 11rem;
+}
+
+.content__navbar li a{
+    color: #fe7363;
+    border-bottom:solid 1px;
+}
+
+.content__navbar li a:hover{
+    color:#ffaf6f ;
+}
+/* buscador + ofertas  + catalogo*/
+.main{
+    background-image:linear-gradient(#88324a,#ffaf6f);
+    padding: 20px 30px;
+}
+
+.content__off{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+/* Buscador */
+.buscador{
+    background-color: #672544;
+    padding: 20px 30px;
+    height: 100px;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: background-color 1s;
+}
+
+.buscador:hover{
+    background-color: #ffaf6f;
+}
+
+.buscador__title{
+    color: #fe7363;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Ofertas */
+.ofertas{
+    background-color:#672544 ;
+    padding: 20px;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+    animation-name: Ofertasc;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Ofertasc {
+    0%{
+        background-color:#672544 ;
+    }
+    50%{
+        background-color:#ffaf6f
+    }
+    100%{
+        background-color:#672544 ;
+    }    
+}
+
+.ofertas__header{
+    position: relative;
+}
+
+.ofertas__header img{
+    width: 33%;
+}
+
+.ofertas__header__title{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fe7363;
+}
+
+.ofertas__title{
+    color: #ffed55;
+    text-align: center;
+    padding: 20px ;
+    font-size: 35px;
+}
+
+.ofertas__Description{
+    color: #fffbed;
+    text-align: center;
+    padding-bottom:10px ;
+}
+/* Catalogo */
+.catalogo{
+    margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalago__title{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fe7363;
+    font-size: 40px;
+}
+
+.catalogo__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card{
+    background-color: #672544;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
+    transition: background-color 1s, transform 0.3s;
+}
+
+.card:hover{
+    background-color:#ffaf6f;
+    transform: translatey(-15px);
+}
+
+.card__header{
+    position: relative;
+}
+
+.card__header img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card__header__title{
+    background-color:rgba(0, 20, 0, 0.5);
+    color: #672544;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card__title{
+    color: #fe7363;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.card__Description{
+    color: #ffed55;
+    margin-bottom: 40px;
+}
+
+.card__link{
+    background-color: #fffbed;
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card__link a{
+    color: black;
+    font-size: 25px;
+
+}
+/* Pie de pagina */
+.footer{
+    background-image:linear-gradient(#ffaf6f,#ba4a56);
+    padding: 20px 30px;
+}
+
+.fotter_a{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+/* Boton de ayuda + sugerencias */
+.ayuda{
+    color: #141911;
+    font-size: 60px;
+}
+
+.sugerencias{
+    color: #141911;
+    font-size: 30px;
+}
+/* Boton de arrepentimiento y trabaja con nosotros */
+.footer_b_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trabaja{
+    color: #141911;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px; 
+}
+
+.boton{
+    color: #141911;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.rss{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rss li a{
+    color: #ffed55;
+    font-size: 20px;
+}
+
+@media (max-width: 1450px){
+    .header__content{
+        font-size: 20px;
+    }
+    .content__navbar li{
+        width: 9rem;
+    }
+    .content__navbar li a{
+       font-size: 25px;
+    }
+    .content__off{
+        grid-template-columns: 1fr;
+    }
+    .catalogo__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ofertas{
+        width: 800px;
+    }
+    .ofertas__header img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 990px){
+    .header{
+        padding: 5px 5px ;
+    }
+    .header__content{
+        font-size: 10px;
+    }
+    .content__logo{
+        width: 50px;
+        height: 50px;
+    }
+    .content__navbar li{
+        width: 7rem;
+    }
+    .content__navbar li a{
+        font-size: 15px;
+    }
+    .ofertas{
+        display: none;
+    }
+    .catalogo__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fotter_a{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:761px){
+    .content__navbar{
+        display: none;
+    }
+    .buscador{
+        height: 120px;
+        width: 225px;
+        text-align: center;
+    }
+    .buscador__title{
+        font-size: 15px;
+    }
+    .card{
+        width: 250px;
+    }
+    .ayuda{
+        font-size: 25px;
+    }
+    .sugerencias{
+        font-size: 15px;
+    }
+    .trabaja{
+        font-size: 15px;
+    }
+    .boton{
+        font-size: 15px;
+    }
+    .seguinos_title{
+        font-size: 15px;
+    }
+    .seguinos a{
+        font-size: 15px;
+    }
+    .fotter_a{
+        grid-template-columns: 1fr;
+    }
+}

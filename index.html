@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ropa ya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Assets/favicon.jpg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <!--Logo + titulo + barra de navegacion-->
+        <section class="header__content">
+            <div class="header__img">
+                <h3><a href="./Index.html">Ropa ya</a></h3>
+                <a href="./Index.html"><img src="./Assets/logo.png" alt="logo" width="75px" height="75px" class="content__logo"/></a>
+            </div>
+            <div>
+                <nav>
+                    <ul class="content__navbar">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./Pages/Ofertas.html">Ofertas</a></li>
+                        <li><a href="./Pages/catalogo.html">Catalogo</a></li>
+                        <li><a href="./Pages/contacto.html">Contacto</a></li>
+                        <li><a href="./Pages/Nosotros.html">Nosotros</a></li>
+                        <li><a href="./Pages/Login.html">Iniciar Sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <Main class="main">
+        <!--buscador + ofertas-->
+        <div class="content__off">
+            <section>
+                <article class="buscador">
+                    <div class="buscador__header">
+                        <form action="">
+                            <label for="search" class="buscador__title">buscador</label>
+                            <input type="search" id="search" name="search" placeholder="Buscar..." class="bucasdor__one"/>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpiar</button>
+                        </form>
+                    </div>
+                </article>
+            </section>  
+            <Section>
+                <article class="ofertas">
+                    <div class="ofertas__header">
+                        <h3 class="ofertas__header__title">OFERTAS!!</h3>
+                        <img src="./Assets/oferta1.jpg" alt="Oferta1"/>
+                        <img src="./Assets/Oferta2.jpg" alt="Oferta2"/>
+                        <img src="./Assets/Oferta3.jpg" alt="Oferta3"/>
+                    </div>
+                    <h3 class="ofertas__title">Ofertas por tiempo limitado!</h3>
+                    <p class="ofertas__Description">
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia voluptas, id autem laboriosam quos saepe repellat nobis praesentium nesciunt tempore a dolores similique officia illo. Doloremque minus nostrum harum.
+                    </p>
+                    <p class="card__link">
+                        <a href="./Pages/catalogo.html">Ir a ofertas</a>
+                    </p>
+                </article>
+            </section>
+        </div>
+        <br/>
+        <br/>
+        <!--Seleccion de catalogo-->
+        <section class="catalogo">
+            <h2 class="catalago__title">Catalogo</h2>
+            <div class="catalogo__grid">
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header__title">nuevo</small>
+                        <img src="./Assets/Campera.jpg" alt="campera"/>
+                    </div>
+                    <h3 class="card__title">Campera Inflada</h3>
+                    <p class="card__Description">
+                        Campera inflada, clásica y liviana. Unos de nuestros productos más solicitado, no te quedes sin el tuyo. Ideal para este invierno, excelente calidad.
+                    </p>
+                    <p class="card__link">
+                        <a href="./Pages/catalogo.html">Ir a catalogo</a>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header__title">nuevo</small>
+                        <img src="./Assets/Camiseta.jpg" alt="remera"/>
+                    </div>
+                    <h3 class="card__title">Remera roja</h3>
+                    <p class="card__Description">
+                        Remera roja de Algodón de excelente calidad
+                    </p>
+                    <p class="card__link">
+                        <a href="./Pages/catalogo.html">Ir a catalogo</a>
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <small class="card__header__title">nuevo</small>
+                        <img src="./Assets/Jeans.jpg" alt="jean"/>
+                    </div>
+                    <h3 class="card__title">Chupin Slim Fit</h3>
+                    <p class="card__Description">
+                        Jean Elastizado chupin - Excelente calce y confección.
+                    </p>
+                    <p class="card__link">
+                        <a href="./Pages/catalogo.html">Ir a catalogo</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!--pie pagina-->
+        <section class="fotter_a">
+            <article class="card__footer">
+                <div class="footer__header" >
+                    <a href="/pages/contacto.html" class="ayuda">Ayuda</a>
+                </div>
+                <form action="">
+                    <label for="Sugerencias" class="sugerencias">Sugerencias o comentarios</label>
+                    <textarea name="Sugenrecias" id="sugerencias"placeholder="Sugerencias..."></textarea>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </article>
+            <article class="footer_b">
+                <div class="footer_b_header">
+                    <a href="./Pages/contacto.html" class="trabaja">Trabaja con nosotros</a>
+                    <a href="./Pages/contacto.html" class="boton">Boton de arrepentimiento</a>
+                </div>
+            </article>
+            <article class="seguinos">
+                <h2 class="seguinos_title">Seguinos en</h2>
+                <ul class="rss">
+                    <li><a href="www.faccebock.com">Faceboock</a></li>
+                    <li><a href="www.instagram.com">Instagram</a></li>
+                    <li><a href="www.whastapp.com">Whatsapp</a></li>
+                    <li><a href="www.telegram.com">Telegram</a></li>
+                </ul>   
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
